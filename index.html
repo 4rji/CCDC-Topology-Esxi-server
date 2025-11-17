@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metrostate CCDC 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <p class="eyebrow">Metrostate Cyber Defense</p>
+      <h1>Metrostate CCDC 2026</h1>
+      <p class="subtitle">Click any component in the topology to jump straight into the matching ESXi console tab. All links open in a new browser tab.</p>
+    </header>
+
+    <section class="topology-panel">
+      <div class="panel-head">
+        <h2>Infrastructure Topology</h2>
+        <p>Visual shortcuts: hover to preview the VM name, click to open the live ESXi session.</p>
+      </div>
+      <div class="topology-board" aria-label="Metrostate topology map">
+        <a class="node" style="top:8%;left:50%" href="https://10.100.1.6/ui/#/host/vms/208" target="_blank" rel="noopener noreferrer" title="VyOS Router">VyOS Router</a>
+        <a class="node" style="top:30%;left:32%" href="https://10.100.1.6/ui/#/host/vms/229" target="_blank" rel="noopener noreferrer" title="Palo Alto">Palo Alto</a>
+        <a class="node" style="top:30%;left:68%" href="https://10.100.1.6/ui/#/host/vms/228" target="_blank" rel="noopener noreferrer" title="Cisco FTD">Cisco FTD</a>
+
+        <a class="node" style="top:74%;left:12%" href="https://10.100.1.6/ui/#/host/vms/219" target="_blank" rel="noopener noreferrer" title="Ecom Ubuntu 24">Ecom Ubuntu 24</a>
+        <a class="node" style="top:74%;left:22%" href="https://10.100.1.6/ui/#/host/vms/190" target="_blank" rel="noopener noreferrer" title="Webmail Fedora 42">Webmail Fedora 42</a>
+        <a class="node" style="top:74%;left:32%" href="https://10.100.1.6/ui/#/host/vms/210" target="_blank" rel="noopener noreferrer" title="Splunk">Splunk</a>
+        <a class="node" style="top:74%;left:42%" href="https://10.100.1.6/ui/#/host/vms/209" target="_blank" rel="noopener noreferrer" title="Wkst Ubuntu 24">Wkst Ubuntu 24</a>
+
+        <a class="node" style="top:74%;left:64%" href="https://10.100.1.6/ui/#/host/vms/224" target="_blank" rel="noopener noreferrer" title="AD / DNS Server 2019">AD / DNS Server 2019</a>
+        <a class="node" style="top:74%;left:74%" href="https://10.100.1.6/ui/#/host/vms/223" target="_blank" rel="noopener noreferrer" title="Web Server 2019">Web Server 2019</a>
+        <a class="node" style="top:74%;left:82%" href="https://10.100.1.6/ui/#/host/vms/189" target="_blank" rel="noopener noreferrer" title="FTP Server 2022">FTP Server 2022</a>
+        <a class="node" style="top:74%;left:90%" href="https://10.100.1.6/ui/#/host/vms/227" target="_blank" rel="noopener noreferrer" title="Wkst Windows 11">Wkst Windows 11</a>
+      </div>
+    </section>
+
+    <section class="link-deck">
+      <div class="panel-head">
+        <h2>Direct Access Deck</h2>
+        <p>Plain list of every shortcut in case the topology overlay is blocked by a browser extension.</p>
+      </div>
+      <div class="card-grid">
+        <a class="card" href="https://10.100.1.6/ui/#/host/vms/209" target="_blank" rel="noopener noreferrer">
+          <h3>Wkst Ubuntu 24</h3>
+          <p>Desktop testing host</p>
+        </a>
+        <a class="card" href="https://10.100.1.6/ui/#/host/vms/228" target="_blank" rel="noopener noreferrer">
+          <h3>Cisco FTD</h3>
+          <p>Perimeter firewall</p>
+        </a>
+        <a class="card" href="https://10.100.1.6/ui/#/host/vms/227" target="_blank" rel="noopener noreferrer">
+          <h3>Wkst Windows 11</h3>
+          <p>Blue-team workstation</p>
+        </a>
+        <a class="card" href="https://10.100.1.6/ui/#/host/vms/189" target="_blank" rel="noopener noreferrer">
+          <h3>FTP Server 2022</h3>
+          <p>File transfer staging</p>
+        </a>
+        <a class="card" href="https://10.100.1.6/ui/#/host/vms/229" target="_blank" rel="noopener noreferrer">
+          <h3>Palo Alto</h3>
+          <p>Left-side firewall</p>
+        </a>
+        <a class="card" href="https://10.100.1.6/ui/#/host/vms/190" target="_blank" rel="noopener noreferrer">
+          <h3>Webmail Fedora 42</h3>
+          <p>Messaging endpoint</p>
+        </a>
+        <a class="card" href="https://10.100.1.6/ui/#/host/vms/208" target="_blank" rel="noopener noreferrer">
+          <h3>VyOS Router</h3>
+          <p>Core routing node</p>
+        </a>
+        <a class="card" href="https://10.100.1.6/ui/#/host/vms/219" target="_blank" rel="noopener noreferrer">
+          <h3>Ecom Ubuntu 24</h3>
+          <p>Storefront</p>
+        </a>
+        <a class="card" href="https://10.100.1.6/ui/#/host/vms/210" target="_blank" rel="noopener noreferrer">
+          <h3>Splunk</h3>
+          <p>Security analytics</p>
+        </a>
+        <a class="card" href="https://10.100.1.6/ui/#/host/vms/224" target="_blank" rel="noopener noreferrer">
+          <h3>AD / DNS Server 2019</h3>
+          <p>Identity & name services</p>
+        </a>
+        <a class="card" href="https://10.100.1.6/ui/#/host/vms/223" target="_blank" rel="noopener noreferrer">
+          <h3>Web Server 2019</h3>
+          <p>Public web tier</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
