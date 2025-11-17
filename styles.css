@@ -74,7 +74,7 @@ h1 {
   margin: 0 auto;
   background: url('topology.png') center/contain no-repeat;
   border-radius: 1rem;
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -97,6 +97,11 @@ h1 {
   text-align: center;
   padding: 0.25rem;
   transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+  overflow: visible;
+}
+
+.node-label {
+  pointer-events: none;
 }
 
 .node:hover,
@@ -104,6 +109,50 @@ h1 {
   transform: translate(-50%, -50%) scale(1.08);
   border-color: #fff;
   box-shadow: 0 0 20px rgba(53, 208, 255, 0.7);
+}
+
+.ip-tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, -0.6rem);
+  background: rgba(2, 12, 24, 0.95);
+  border: 1px solid rgba(53, 208, 255, 0.7);
+  border-radius: 0.55rem;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.65rem;
+  line-height: 1.3;
+  white-space: nowrap;
+  color: #e3f6ff;
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+  z-index: 2;
+}
+
+.ip-tooltip::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 0.65rem;
+  height: 0.65rem;
+  background: rgba(2, 12, 24, 0.95);
+  border-left: 1px solid rgba(53, 208, 255, 0.7);
+  border-bottom: 1px solid rgba(53, 208, 255, 0.7);
+  transform-origin: center;
+}
+
+.node:hover .ip-tooltip,
+.node:focus-visible .ip-tooltip {
+  opacity: 1;
+  transform: translate(-50%, -1.1rem);
+}
+
+.ip-tooltip .ip-line {
+  display: block;
 }
 
 .card-grid {
@@ -131,6 +180,26 @@ h1 {
   margin: 0;
   color: var(--text-muted);
   font-size: 0.95rem;
+}
+
+.card .ip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.6rem 0 0;
+  font-size: 0.85rem;
+  color: #dcefff;
+}
+
+.card .ip-list li + li {
+  margin-top: 0.25rem;
+}
+
+.card .ip-list strong {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  margin-right: 0.3rem;
 }
 
 .card:hover,
