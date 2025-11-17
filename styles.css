@@ -107,9 +107,20 @@ h1 {
 }
 
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card-row {
+  display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card-row .card {
+  flex: 1 1 240px;
 }
 
 .card {
