@@ -133,6 +133,26 @@ h1 {
   font-size: 0.95rem;
 }
 
+.card-windows {
+  background: linear-gradient(135deg, rgba(7, 32, 82, 0.95), rgba(19, 82, 170, 0.92));
+  border-color: rgba(75, 150, 255, 0.7);
+}
+
+.card-linux {
+  background: linear-gradient(135deg, rgba(6, 50, 18, 0.95), rgba(14, 110, 52, 0.9));
+  border-color: rgba(79, 218, 139, 0.65);
+}
+
+.card-firewall {
+  background: linear-gradient(135deg, rgba(78, 6, 6, 0.95), rgba(165, 37, 26, 0.9));
+  border-color: rgba(255, 87, 78, 0.7);
+}
+
+.card-switch {
+  background: linear-gradient(135deg, rgba(8, 8, 8, 0.95), rgba(35, 35, 35, 0.9));
+  border-color: rgba(160, 160, 160, 0.5);
+}
+
 .card .ip-list {
   list-style: none;
   padding: 0;
@@ -150,6 +170,39 @@ h1 {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 0.04em;
+  margin-right: 0.3rem;
+}
+
+.cred-block {
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cred-label {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.cred-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  color: #f4fbff;
+}
+
+.cred-list li + li {
+  margin-top: 0.2rem;
+}
+
+.cred-list strong {
+  color: var(--accent);
+  font-weight: 700;
   margin-right: 0.3rem;
 }
 
