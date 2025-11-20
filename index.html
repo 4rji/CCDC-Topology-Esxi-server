@@ -13,29 +13,6 @@
       <h1>Metrostate CCDC 2026</h1>
       <p class="subtitle">Click any component in the topology to jump straight into the matching ESXi console tab. All links open in a new browser tab.</p>
     </header>
-
-    <section class="topology-panel">
-      <div class="panel-head">
-        <h2>Infrastructure Topology</h2>
-        
-      </div>
-      <div class="topology-board" aria-label="Metrostate topology map">
-        <a class="node" style="top:8%;left:50%" href="https://10.100.1.6/ui/#/host/vms/208" target="_blank" rel="noopener noreferrer" title="VyOS Router">VyOS Router</a>
-        <a class="node" style="top:30%;left:32%" href="https://10.100.1.6/ui/#/host/vms/229" target="_blank" rel="noopener noreferrer" title="Palo Alto">Palo Alto</a>
-        <a class="node" style="top:30%;left:68%" href="https://10.100.1.6/ui/#/host/vms/228" target="_blank" rel="noopener noreferrer" title="Cisco FTD">Cisco FTD</a>
-
-        <a class="node" style="top:74%;left:12%" href="https://10.100.1.6/ui/#/host/vms/219" target="_blank" rel="noopener noreferrer" title="Ecom Ubuntu 24">Ecom Ubuntu 24</a>
-        <a class="node" style="top:74%;left:22%" href="https://10.100.1.6/ui/#/host/vms/190" target="_blank" rel="noopener noreferrer" title="Webmail Fedora 42">Webmail Fedora 42</a>
-        <a class="node" style="top:74%;left:32%" href="https://10.100.1.6/ui/#/host/vms/210" target="_blank" rel="noopener noreferrer" title="Splunk">Splunk</a>
-        <a class="node" style="top:74%;left:42%" href="https://10.100.1.6/ui/#/host/vms/209" target="_blank" rel="noopener noreferrer" title="Wkst Ubuntu 24">Wkst Ubuntu 24</a>
-
-        <a class="node" style="top:74%;left:64%" href="https://10.100.1.6/ui/#/host/vms/224" target="_blank" rel="noopener noreferrer" title="AD / DNS Server 2019">AD / DNS Server 2019</a>
-        <a class="node" style="top:74%;left:75%" href="https://10.100.1.6/ui/#/host/vms/223" target="_blank" rel="noopener noreferrer" title="Web Server 2019">Web Server 2019</a>
-        <a class="node" style="top:74%;left:85%" href="https://10.100.1.6/ui/#/host/vms/188" target="_blank" rel="noopener noreferrer" title="FTP Server 2022">FTP Server 2022</a>
-        <a class="node" style="top:74%;left:95%" href="https://10.100.1.6/ui/#/host/vms/244" target="_blank" rel="noopener noreferrer" title="Wkst Windows 11">Wkst Windows 11</a>
-      </div>
-    </section>
-
     <section class="link-deck">
       <div class="panel-head">
         <h2>Direct Access Deck</h2>
@@ -276,6 +253,81 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="link-deck resource-panel">
+      <div class="panel-head">
+        <h2>Resources</h2>
+        <p>Quick shortcuts for shared tooling services.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card-row">
+          <div class="card card-resource">
+            <div class="card-body">
+              <h3>Nextcloud</h3>
+              <p>Team cloud drive and shared docs.</p>
+              <p class="resource-link"><a href="http://10.100.1.190/index.php/login" target="_blank" rel="noopener noreferrer">http://10.100.1.190/index.php/login</a></p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button" href="http://10.100.1.190/index.php/login" target="_blank" rel="noopener noreferrer">Open Resource</a>
+            </div>
+          </div>
+          <div class="card card-resource">
+            <div class="card-body">
+              <h3>Enumeration Windows Files</h3>
+              <p>Browse Windows-based enumeration drops.</p>
+              <p class="resource-link"><a href="http://10.100.1.190:9000/" target="_blank" rel="noopener noreferrer">http://10.100.1.190:9000/</a></p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button" href="http://10.100.1.190:9000/" target="_blank" rel="noopener noreferrer">Open Resource</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-row">
+          <div class="card card-resource">
+            <div class="card-body">
+              <h3>Enumeration Files</h3>
+              <p>General file drop for Linux/Unix enumeration.</p>
+              <p class="resource-link"><a href="http://10.100.1.190:8080" target="_blank" rel="noopener noreferrer">http://10.100.1.190:8080</a></p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button" href="http://10.100.1.190:8080" target="_blank" rel="noopener noreferrer">Open Resource</a>
+            </div>
+          </div>
+          <div class="card card-resource">
+            <div class="card-body">
+              <h3>BloodHound</h3>
+              <p>BloodHound interface for AD graphing.</p>
+              <p class="resource-link"><a href="http://10.100.1.196:8080/ui/login" target="_blank" rel="noopener noreferrer">http://10.100.1.196:8080/ui/login</a></p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button" href="http://10.100.1.196:8080/ui/login" target="_blank" rel="noopener noreferrer">Open Resource</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="topology-panel">
+      <div class="panel-head">
+        <h2>Infrastructure Topology</h2>
+        
+      </div>
+      <div class="topology-board" aria-label="Metrostate topology map">
+        <a class="node" style="top:8%;left:50%" href="https://10.100.1.6/ui/#/host/vms/208" target="_blank" rel="noopener noreferrer" title="VyOS Router">VyOS Router</a>
+        <a class="node" style="top:30%;left:32%" href="https://10.100.1.6/ui/#/host/vms/229" target="_blank" rel="noopener noreferrer" title="Palo Alto">Palo Alto</a>
+        <a class="node" style="top:30%;left:68%" href="https://10.100.1.6/ui/#/host/vms/228" target="_blank" rel="noopener noreferrer" title="Cisco FTD">Cisco FTD</a>
+
+        <a class="node" style="top:74%;left:12%" href="https://10.100.1.6/ui/#/host/vms/219" target="_blank" rel="noopener noreferrer" title="Ecom Ubuntu 24">Ecom Ubuntu 24</a>
+        <a class="node" style="top:74%;left:22%" href="https://10.100.1.6/ui/#/host/vms/190" target="_blank" rel="noopener noreferrer" title="Webmail Fedora 42">Webmail Fedora 42</a>
+        <a class="node" style="top:74%;left:32%" href="https://10.100.1.6/ui/#/host/vms/210" target="_blank" rel="noopener noreferrer" title="Splunk">Splunk</a>
+        <a class="node" style="top:74%;left:42%" href="https://10.100.1.6/ui/#/host/vms/209" target="_blank" rel="noopener noreferrer" title="Wkst Ubuntu 24">Wkst Ubuntu 24</a>
+
+        <a class="node" style="top:74%;left:64%" href="https://10.100.1.6/ui/#/host/vms/224" target="_blank" rel="noopener noreferrer" title="AD / DNS Server 2019">AD / DNS Server 2019</a>
+        <a class="node" style="top:74%;left:75%" href="https://10.100.1.6/ui/#/host/vms/223" target="_blank" rel="noopener noreferrer" title="Web Server 2019">Web Server 2019</a>
+        <a class="node" style="top:74%;left:85%" href="https://10.100.1.6/ui/#/host/vms/188" target="_blank" rel="noopener noreferrer" title="FTP Server 2022">FTP Server 2022</a>
+        <a class="node" style="top:74%;left:95%" href="https://10.100.1.6/ui/#/host/vms/244" target="_blank" rel="noopener noreferrer" title="Wkst Windows 11">Wkst Windows 11</a>
       </div>
     </section>
 
