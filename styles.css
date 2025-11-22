@@ -123,6 +123,16 @@ h1 {
   flex: 1 1 240px;
 }
 
+.card-row.linux-row {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.card-row.linux-row .card {
+  min-width: 220px;
+}
+
 .card {
   background: rgba(8, 30, 52, 0.9);
   border: 1px solid var(--panel-border);
@@ -154,6 +164,11 @@ h1 {
 .card-windows {
   background: linear-gradient(135deg, rgba(7, 32, 82, 0.95), rgba(19, 82, 170, 0.92));
   border-color: rgba(75, 150, 255, 0.7);
+}
+
+.card-windows.card-windows-test {
+  background: linear-gradient(135deg, #0a0a0a, #1b1b1b);
+  border-color: #3d3d3d;
 }
 
 .card-linux {
