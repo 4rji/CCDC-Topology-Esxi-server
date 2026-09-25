@@ -191,6 +191,11 @@ h1 {
   border-color: rgba(186, 140, 255, 0.65);
 }
 
+.card-resource.card-redteam {
+  background: linear-gradient(135deg, rgba(52, 6, 10, 0.96), rgba(140, 20, 30, 0.88));
+  border-color: rgba(255, 92, 92, 0.7);
+}
+
 .resource-link {
   margin: 0.6rem 0 0;
 }
@@ -268,6 +273,16 @@ h1 {
 .access-button:focus-visible {
   transform: translateY(-1px);
   box-shadow: 0 10px 18px rgba(53, 208, 255, 0.35);
+}
+
+.access-button.redteam {
+  background: #ff4d4d;
+  color: #2a0003;
+}
+
+.access-button.redteam:hover,
+.access-button.redteam:focus-visible {
+  box-shadow: 0 10px 18px rgba(255, 77, 77, 0.4);
 }
 
 .access-button.secondary {

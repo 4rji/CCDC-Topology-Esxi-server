@@ -20,85 +20,6 @@
       </div>
       <div class="card-grid">
         <div class="card-row">
-          <div class="card card-switch">
-            <div class="card-body">
-              <h3>VyOS Router</h3>
-              <p>Core routing node</p>
-              <ul class="ip-list">
-                <li><strong>External:</strong> 172.31.21.2/29</li>
-                <li><strong>net1:</strong> 172.16.101.1/24</li>
-                <li><strong>net2:</strong> 172.16.102.1/24</li>
-                <li><strong>ESXi:</strong> 10.100.1.130</li>
-              </ul>
-              <div class="cred-block">
-                <p class="cred-label">Credentials</p>
-                <ul class="cred-list">
-                  <li><strong>vyos</strong> / changeme</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card-actions">
-              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/208" target="_blank" rel="noopener noreferrer">Open ESXi</a>
-              <a class="access-button console" href="https://10.100.1.6/ui/#/console/208" target="_blank" rel="noopener noreferrer">Console</a>
-            </div>
-          </div>
-          <div class="card card-firewall">
-            <div class="card-body">
-              <h3>Palo Alto</h3>
-              <p>Left-side firewall</p>
-              <ul class="ip-list">
-                <li><strong>Outside:</strong> 172.16.101.240/24</li>
-                <li><strong>Inside:</strong> 172.20.242.254/24</li>
-                <li><strong>Mgmt:</strong> 172.20.242.150</li>
-                </ul>
-              <div class="cred-block">
-                <p class="cred-label">Credentials</p>
-                <ul class="cred-list">
-                  <li><strong>admin</strong> / Changeme123</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card-actions">
-              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/229" target="_blank" rel="noopener noreferrer">Open ESXi</a>
-              <a class="access-button console" href="https://10.100.1.6/ui/#/console/229" target="_blank" rel="noopener noreferrer">Console</a>
-            </div>
-          </div>
-          <div class="card card-firewall">
-            <div class="card-body">
-              <h3>Cisco FTD</h3>
-              <p>Perimeter firewall</p>
-              <ul class="ip-list">
-                <li><strong>Outside:</strong> 172.16.102.254/24</li>
-                <li><strong>Inside:</strong> 172.20.240.254/24</li>
-                <li><strong>Mgmt:</strong> 192.168.45.45 (MGMT-FTD)</li>
-                <li><strong>Mgmt:</strong> 172.20.240.200</li>
-                <li><strong>VyOS:</strong> 172.16.102.33</li>
-              </ul>
-              <div class="cred-block">
-                <p class="cred-label">Credentials</p>
-                <ul class="cred-list">
-                  <li><strong>admin</strong> / Changeme123</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card-actions">
-              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/228" target="_blank" rel="noopener noreferrer">Open ESXi</a>
-              <a class="access-button console" href="https://10.100.1.6/ui/#/console/228" target="_blank" rel="noopener noreferrer">Console</a>
-            </div>
-          </div>
-          <div class="card card-windows">
-            <div class="card-body">
-              <h3>Windows 10 External</h3>
-              <p>Use this VM to check external service IPs (DNS, webmail, websites, etc.).</p>
-            </div>
-            <div class="card-actions">
-              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/251" target="_blank" rel="noopener noreferrer">Open ESXi</a>
-              <a class="access-button console" href="https://10.100.1.6/ui/#/console/251" target="_blank" rel="noopener noreferrer">Console</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-row">
           <div class="card card-windows">
             <div class="card-body">
               <h3>Humberto</h3>
@@ -169,6 +90,111 @@
             </div>
             <div class="card-actions">
               <a class="access-button" href="http://10.100.1.200:8001/" target="_blank" rel="noopener noreferrer">Open Resource</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-row">
+          <div class="card card-resource card-redteam">
+            <div class="card-body">
+              <h3>Redteam Artifacts</h3>
+              <p>Red team artifacts and file drops.</p>
+              <p class="resource-link"><a href="http://10.100.1.188:8081/" target="_blank" rel="noopener noreferrer">http://10.100.1.188:8081/</a></p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button redteam" href="http://10.100.1.188:8081/" target="_blank" rel="noopener noreferrer">Open Resource</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="link-deck">
+      <div class="panel-head">
+        <h2>Network Core</h2>
+        <p>Router, firewalls and the external Windows VM.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card-row">
+          <div class="card card-switch">
+            <div class="card-body">
+              <h3>VyOS Router</h3>
+              <p>Core routing node</p>
+              <ul class="ip-list">
+                <li><strong>External:</strong> 172.31.21.2/29</li>
+                <li><strong>net1:</strong> 172.16.101.1/24</li>
+                <li><strong>net2:</strong> 172.16.102.1/24</li>
+                <li><strong>ESXi:</strong> 10.100.1.130</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>vyos</strong> / changeme</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/208" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/208" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-firewall">
+            <div class="card-body">
+              <h3>Palo Alto</h3>
+              <p>Left-side firewall</p>
+              <ul class="ip-list">
+                <li><strong>Outside:</strong> 172.16.101.240/24</li>
+                <li><strong>Inside:</strong> 172.20.242.254/24</li>
+                <li><strong>Mgmt:</strong> 172.20.242.150</li>
+                </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>admin</strong> / Changeme123</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/229" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/229" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-firewall">
+            <div class="card-body">
+              <h3>Cisco FTD</h3>
+              <p>Perimeter firewall</p>
+              <ul class="ip-list">
+                <li><strong>Outside:</strong> 172.16.102.254/24</li>
+                <li><strong>Inside:</strong> 172.20.240.254/24</li>
+                <li><strong>Mgmt:</strong> 192.168.45.45 (MGMT-FTD)</li>
+                <li><strong>Mgmt:</strong> 172.20.240.200</li>
+                <li><strong>VyOS:</strong> 172.16.102.33</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>admin</strong> / Changeme123</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/228" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/228" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-windows">
+            <div class="card-body">
+              <h3>Windows 10 External</h3>
+              <p>Use this VM to check external service IPs (DNS, webmail, websites, etc.).</p>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>metro</strong> / no password</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/418" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/418" target="_blank" rel="noopener noreferrer">Console</a>
             </div>
           </div>
         </div>
