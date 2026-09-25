@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metrostate CCDC 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <p class="eyebrow">Metrostate Cyber Defense</p>
+      <h1>Metrostate CCDC 2026</h1>
+      <p class="subtitle">Click any component in the topology to jump straight into the matching ESXi console tab. All links open in a new browser tab.</p>
+    </header>
+    <section class="link-deck">
+      <div class="panel-head">
+        <h2>Direct Access Deck</h2>
+        <p>Plain list of every shortcut in case the topology overlay is blocked by a browser extension.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card-row">
+          <div class="card card-switch">
+            <div class="card-body">
+              <h3>VyOS Router</h3>
+              <p>Core routing node</p>
+              <ul class="ip-list">
+                <li><strong>External:</strong> 172.31.21.2/29</li>
+                <li><strong>net1:</strong> 172.16.101.1/24</li>
+                <li><strong>net2:</strong> 172.16.102.1/24</li>
+                <li><strong>ESXi:</strong> 10.100.1.130</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>vyos</strong> / changeme</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/208" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/208" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-firewall">
+            <div class="card-body">
+              <h3>Palo Alto</h3>
+              <p>Left-side firewall</p>
+              <ul class="ip-list">
+                <li><strong>Outside:</strong> 172.16.101.240/24</li>
+                <li><strong>Inside:</strong> 172.20.242.254/24</li>
+                <li><strong>Mgmt:</strong> 172.20.242.150</li>
+                </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>admin</strong> / Changeme123</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/229" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/229" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-firewall">
+            <div class="card-body">
+              <h3>Cisco FTD</h3>
+              <p>Perimeter firewall</p>
+              <ul class="ip-list">
+                <li><strong>Outside:</strong> 172.16.102.254/24</li>
+                <li><strong>Inside:</strong> 172.20.240.254/24</li>
+                <li><strong>Mgmt:</strong> 192.168.45.45 (MGMT-FTD)</li>
+                <li><strong>Mgmt:</strong> 172.20.240.200</li>
+                <li><strong>VyOS:</strong> 172.16.102.33</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>admin</strong> / Changeme123</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/228" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/228" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-windows">
+            <div class="card-body">
+              <h3>Windows 10 External</h3>
+              <p>Use this VM to check external service IPs (DNS, webmail, websites, etc.).</p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/251" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/251" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-row linux-row">
+          <div class="card card-linux">
+            <div class="card-body">
+              <h3>Wkst Ubuntu 24</h3>
+              <p>Desktop testing host</p>
+              <ul class="ip-list">
+                <li><strong>LAN:</strong> DHCP</li>
+                <li><strong>Public:</strong> dynamic</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>sysadmin</strong> / changeme</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/209" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/209" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-linux">
+            <div class="card-body">
+              <h3>Ecom Ubuntu 24</h3>
+              <p>Storefront</p>
+              <ul class="ip-list">
+                <li><strong>LAN:</strong> 172.20.242.104</li>
+                <li><strong>Public:</strong> 172.25.39.11</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>sysadmin</strong> / changeme</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/219" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/219" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-linux">
+            <div class="card-body">
+              <h3>Webmail Fedora 42</h3>
+              <p>Messaging endpoint</p>
+              <ul class="ip-list">
+                <li><strong>LAN:</strong> 172.20.242.101</li>
+                <li><strong>Public:</strong> 172.25.39.39</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>sysadmin</strong> / changeme</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/190" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/190" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-linux">
+            <div class="card-body">
+              <h3>Splunk</h3>
+              <p>Security analytics</p>
+              <ul class="ip-list">
+                <li><strong>LAN:</strong> 172.20.242.20</li>
+                <li><strong>Public:</strong> 172.25.39.9</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>root</strong> / changemenow</li>
+                  <li><strong>sysadmin</strong> / changemenow</li>
+                  <li><strong>admin</strong> / changeme</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/255" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/255" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-windows card-windows-test">
+            <div class="card-body">
+              <h3>Windows for Linux subnet 172.20.242 </h3>
+              <p>Windows for Linux </p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/227" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/227" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-row">
+          <div class="card card-windows">
+            <div class="card-body">
+              <h3>Wkst Windows 11</h3>
+              <p>Blue-team workstation</p>
+              <ul class="ip-list">
+                <li><strong>LAN:</strong> 172.20.240.100</li>
+                <li><strong>Public:</strong> 172.25.39.144</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>administrator</strong> / !Password123</li>
+                  <li><strong>UserOne</strong> / ChangeMe123</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/244" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/244" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-windows">
+            <div class="card-body">
+              <h3>FTP Server 2022</h3>
+              <p>File transfer staging</p>
+              <ul class="ip-list">
+                <li><strong>LAN:</strong> 172.20.240.104</li>
+                <li><strong>Public:</strong> 172.25.39.162</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>administrator</strong> / !Password123</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/189" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/189" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-windows">
+            <div class="card-body">
+              <h3>AD / DNS Server 2019</h3>
+              <p>Identity & name services</p>
+              <ul class="ip-list">
+                <li><strong>LAN:</strong> 172.20.240.102</li>
+                <li><strong>Public:</strong> 172.25.39.155</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>administrator</strong> / !Password123</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/263" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/263" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-windows">
+            <div class="card-body">
+              <h3>Web Server 2019</h3>
+              <p>Public web tier</p>
+              <ul class="ip-list">
+                <li><strong>LAN:</strong> 172.20.240.101</li>
+                <li><strong>Public:</strong> 172.25.39.140</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>administrator</strong> / !Password123</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/188" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/188" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="link-deck resource-panel">
+      <div class="panel-head">
+        <h2>Resources</h2>
+        <p>Quick shortcuts for shared tooling services.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card-row">
+          <div class="card card-resource">
+            <div class="card-body">
+              <h3>Nextcloud</h3>
+              <p>Team cloud drive and shared docs.</p>
+              <p class="resource-link"><a href="http://10.100.1.190/index.php/login" target="_blank" rel="noopener noreferrer">http://10.100.1.190/index.php/login</a></p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button" href="http://10.100.1.190/index.php/login" target="_blank" rel="noopener noreferrer">Open Resource</a>
+            </div>
+          </div>
+          <div class="card card-resource">
+            <div class="card-body">
+              <h3>Enumeration Windows Files</h3>
+              <p>Browse Windows-based enumeration drops.</p>
+              <p class="resource-link"><a href="http://10.100.1.190:9000/" target="_blank" rel="noopener noreferrer">http://10.100.1.190:9000/</a></p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button" href="http://10.100.1.190:9000/" target="_blank" rel="noopener noreferrer">Open Resource</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-row">
+          <div class="card card-resource">
+            <div class="card-body">
+              <h3>Enumeration Files</h3>
+              <p>General file drop for Linux/Unix enumeration.</p>
+              <p class="resource-link"><a href="http://10.100.1.190:8080" target="_blank" rel="noopener noreferrer">http://10.100.1.190:8080</a></p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button" href="http://10.100.1.190:8080" target="_blank" rel="noopener noreferrer">Open Resource</a>
+            </div>
+          </div>
+          <div class="card card-resource">
+            <div class="card-body">
+              <h3>Templates</h3>
+              <p>Templates for injects and banners configs.</p>
+              <p class="resource-link"><a href="http://10.100.1.189:8881" target="_blank" rel="noopener noreferrer">http://10.100.1.189:8881</a></p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button" href="http://10.100.1.189:8881" target="_blank" rel="noopener noreferrer">Open Resource</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="topology-panel">
+      <div class="panel-head">
+        <h2>Infrastructure Topology</h2>
+        
+      </div>
+      <div class="topology-board" aria-label="Metrostate topology map">
+        <a class="node" style="top:8%;left:50%" href="https://10.100.1.6/ui/#/host/vms/208" target="_blank" rel="noopener noreferrer" title="VyOS Router">VyOS Router</a>
+        <a class="node" style="top:30%;left:32%" href="https://10.100.1.6/ui/#/host/vms/229" target="_blank" rel="noopener noreferrer" title="Palo Alto">Palo Alto</a>
+        <a class="node" style="top:30%;left:68%" href="https://10.100.1.6/ui/#/host/vms/228" target="_blank" rel="noopener noreferrer" title="Cisco FTD">Cisco FTD</a>
+
+        <a class="node" style="top:74%;left:12%" href="https://10.100.1.6/ui/#/host/vms/219" target="_blank" rel="noopener noreferrer" title="Ecom Ubuntu 24">Ecom Ubuntu 24</a>
+        <a class="node" style="top:74%;left:22%" href="https://10.100.1.6/ui/#/host/vms/190" target="_blank" rel="noopener noreferrer" title="Webmail Fedora 42">Webmail Fedora 42</a>
+        <a class="node" style="top:74%;left:32%" href="https://10.100.1.6/ui/#/host/vms/255" target="_blank" rel="noopener noreferrer" title="Splunk">Splunk</a>
+        <a class="node" style="top:74%;left:42%" href="https://10.100.1.6/ui/#/host/vms/209" target="_blank" rel="noopener noreferrer" title="Wkst Ubuntu 24">Wkst Ubuntu 24</a>
+
+        <a class="node" style="top:74%;left:64%" href="https://10.100.1.6/ui/#/host/vms/263" target="_blank" rel="noopener noreferrer" title="AD / DNS Server 2019">AD / DNS Server 2019</a>
+        <a class="node" style="top:74%;left:75%" href="https://10.100.1.6/ui/#/host/vms/188" target="_blank" rel="noopener noreferrer" title="Web Server 2019">Web Server 2019</a>
+        <a class="node" style="top:74%;left:85%" href="https://10.100.1.6/ui/#/host/vms/189" target="_blank" rel="noopener noreferrer" title="FTP Server 2022">FTP Server 2022</a>
+        <a class="node" style="top:74%;left:95%" href="https://10.100.1.6/ui/#/host/vms/244" target="_blank" rel="noopener noreferrer" title="Wkst Windows 11">Wkst Windows 11</a>
+      </div>
+    </section>
+
+    <section class="link-deck companion-deck">
+      <div class="panel-head">
+        <h2>Additional Lab Machines</h2>
+        <p>Extra hosts that sit outside the primary training deck but still need fast ESXi access.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card-row">
+          <div class="card card-linux">
+            <div class="card-body">
+              <h3>kali-external</h3>
+              <p>Ip eth0 10.100.1.189</p>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/221" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/221" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-row">
+          <div class="card card-linux">
+            <div class="card-body">
+              <h3>Debian Net2 network</h3>
+              <p>Debian 24 workstation</p>
+              <ul class="ip-list">
+                <li><strong>ens160:</strong> 172.16.102.10</li>
+              </ul>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/218" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/218" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-linux">
+            <div class="card-body">
+              <h3>Debian-Net1</h3>
+              <p>Net1 Debian host</p>
+              <ul class="ip-list">
+                <li><strong>ens192:</strong> 172.16.101.13</li>
+              </ul>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/217" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/217" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-row">
+          <div class="card card-linux">
+            <div class="card-body">
+              <h3>Kali on Palo Network</h3>
+              <p>For testing connectivity and nmap scans</p>
+              <ul class="ip-list">
+                <li><strong>LAN:</strong> 172.20.242.69</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>metro</strong> / metro</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/249" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/249" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+          <div class="card card-linux">
+            <div class="card-body">
+              <h3>Kali on Cisco Network 240</h3>
+              <p>For testing connectivity and nmap scans</p>
+              <ul class="ip-list">
+                <li><strong>LAN:</strong> 172.20.240.89</li>
+              </ul>
+              <div class="cred-block">
+                <p class="cred-label">Credentials</p>
+                <ul class="cred-list">
+                  <li><strong>metro</strong> / metro</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="access-button secondary" href="https://10.100.1.6/ui/#/host/vms/250" target="_blank" rel="noopener noreferrer">Open ESXi</a>
+              <a class="access-button console" href="https://10.100.1.6/ui/#/console/250" target="_blank" rel="noopener noreferrer">Console</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
