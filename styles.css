@@ -191,6 +191,11 @@ h1 {
   border-color: rgba(186, 140, 255, 0.65);
 }
 
+.card-purple {
+  background: linear-gradient(135deg, rgba(40, 10, 74, 0.96), rgba(108, 43, 196, 0.9));
+  border-color: rgba(186, 140, 255, 0.75);
+}
+
 .card-resource.card-redteam {
   background: linear-gradient(135deg, rgba(52, 6, 10, 0.96), rgba(140, 20, 30, 0.88));
   border-color: rgba(255, 92, 92, 0.7);
